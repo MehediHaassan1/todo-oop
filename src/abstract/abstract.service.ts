@@ -1,0 +1,13 @@
+import Models from "../models/rootModel";
+import ResMsg from "../utils/miscellaneous/responseMessage";
+import StatusCode from "../utils/miscellaneous/statusCode";
+
+abstract class AbstractService {
+	protected ResMsg = ResMsg;
+	protected StatusCode = StatusCode;
+
+	protected Model = new Models();
+	protected schema = new Schema();
+}
+
+export default AbstractService;

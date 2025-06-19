@@ -15,7 +15,9 @@ class App {
     }
     startServer() {
         this.app.listen(this.port, () => {
-            console.log(`Server is started at port: ${this.port} 🚀`);
+            console.log(`🚀 Server launched successfully on port ${this.port}`);
+            console.log(`⏰ Started at: ${new Date().toISOString()}`);
+            console.log(`🔗 Access: http://localhost:${this.port}`);
         });
     }
     initMiddleware() {
