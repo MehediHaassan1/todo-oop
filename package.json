@@ -1,0 +1,27 @@
+{
+	"name": "TODO - OOP",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon dist/server.js",
+		"start": "node dist/server.js"
+	},
+	"keywords": [],
+	"author": "Mehedi Hassan Barat - mehedi.haassan1@gmail.com",
+	"license": "ISC",
+	"description": "Learning OOP concepts and implement it to the web application for better understand.",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"joi": "^17.13.3",
+		"jsonwebtoken": "^9.0.2",
+		"knex": "^3.1.0",
+		"nodemon": "^3.1.10",
+		"pg": "^8.16.1"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.3"
+	}
+}
