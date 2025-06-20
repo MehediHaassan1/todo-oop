@@ -1,5 +1,6 @@
 import Models from "../models/rootModel";
 import ResMsg from "../utils/miscellaneous/responseMessage";
+import Schema from "../utils/miscellaneous/schema";
 import StatusCode from "../utils/miscellaneous/statusCode";
 
 abstract class AbstractService {
