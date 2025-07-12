@@ -4,7 +4,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "nodemon dist/server.js",
-		"start": "node dist/server.js"
+		"start": "node dist/server.js",
+		 "build": "tsc"
 	},
 	"keywords": [],
 	"author": "Mehedi Hassan Barat - mehedi.haassan1@gmail.com",

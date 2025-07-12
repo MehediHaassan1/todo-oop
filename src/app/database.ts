@@ -1,4 +1,4 @@
-import knex, { Knex } from "knex";
+/* import knex, { Knex } from "knex";
 import config from "../utils/config/config";
 
 const createDBConnection = () => {
@@ -25,6 +25,28 @@ const createDBConnection = () => {
     console.log("Database connected");
 
     return connection;
+};
+
+export const db = createDBConnection();
+ */
+
+import knex, { Knex } from "knex";
+import config from "../utils/config/config";
+
+const createDBConnection = () => {
+	let connection: Knex<any, unknown[]> = knex({
+		client: "pg",
+		connection: config.DATABASE_URL, // <-- use full URL string here
+		pool: {
+			min: 0,
+			max: 10,
+		},
+		// timezone: "UTC",  // if you want to keep this, you can configure in your DB or app
+	});
+
+	console.log("Database connected");
+
+	return connection;
 };
 
 export const db = createDBConnection();
